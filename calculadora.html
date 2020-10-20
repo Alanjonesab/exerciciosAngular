@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+    
+    <script>
+
+        
+        var opcao = parseInt(prompt("Escolha uma opção: \n(1) somar\n (2) subtrair\n  (3) multiplicar\n (4) dividir: ")); 
+
+        var numA = parseInt(prompt("Digite o primeiro valor: "));
+        var numB = parseInt(prompt("Digite o segundo valor: "));
+
+        console.log("O resultado da operação é: ");
+
+    
+        switch(opcao) {
+            case 1: window.alert(somar(numA, numB)); break;
+            case 2: window.alert(subtrair(numA, numB));break;
+            case 3: window.alert(multiplicar(numA, numB));break;
+            case 4: window.alert(dividir(numA, numB));break;
+            default: window.alert("Opção Inválida!");
+        }
+        function somar(numA, numB) {
+
+            var soma = numA + numB;
+            return soma;
+        }
+
+        function subtrair(numA, numB) {
+
+            var diferenca = numA - numB;
+            return diferenca;
+        }
+
+        function multiplicar(numA, numB) {
+            var produto = numA * numB;
+            return produto;
+        }
+
+        function dividir(numA, numB) {
+            var quociente = numA / numB;
+            return quociente.toPrecision(2);
+        }
+
+    </script>
+</body>
+</html>
